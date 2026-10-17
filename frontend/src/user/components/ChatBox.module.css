@@ -1,0 +1,275 @@
+/* ============================= */
+/* WRAPPER */
+/* ============================= */
+
+.wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Segoe UI", sans-serif;
+  transition: 0.3s ease;
+}
+
+.dark {
+  background: rgba(18, 18, 18, 0.85);
+  color: #f5f5f5;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.themeToggle {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 6px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: inherit;
+  transition: 0.2s ease;
+}
+
+.themeToggle:hover {
+  opacity: 0.7;
+}
+
+/* ============================= */
+/* CHAT AREA */
+/* ============================= */
+
+.chatArea {
+  min-height: 400px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================= */
+/* MESSAGE ROW */
+/* ============================= */
+
+.messageRow {
+  margin: 12px 0;
+  display: flex;
+}
+
+.userRow {
+  justify-content: flex-end;
+}
+
+.botRow {
+  justify-content: flex-start;
+}
+
+/* ============================= */
+/* MESSAGE BUBBLE */
+/* ============================= */
+
+.messageBubble {
+  padding: 14px 18px;
+  border-radius: 18px;
+  max-width: 75%;
+  position: relative;
+  backdrop-filter: blur(15px);
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.userBubble {
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  color: white;
+}
+
+.botBubble {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ============================= */
+/* MESSAGE HEADER */
+/* ============================= */
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.senderLabel {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* ============================= */
+/* COPY BUTTON */
+/* ============================= */
+
+.copyBtn {
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  transition: 0.2s ease;
+}
+
+.copyBtn:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+}
+
+/* ============================= */
+/* MARKDOWN CONTENT */
+/* ============================= */
+
+.messageContent {
+  font-size: 15px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.messageContent h1,
+.messageContent h2,
+.messageContent h3 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.messageContent p {
+  margin: 6px 0;
+}
+
+.messageContent ul {
+  padding-left: 18px;
+  margin: 6px 0;
+}
+
+.messageContent code {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.messageContent pre {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+/* ============================= */
+/* INPUT AREA */
+/* ============================= */
+
+.inputArea {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.inputArea input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.inputArea button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  color: white;
+  transition: 0.2s ease;
+}
+
+.inputArea button:hover {
+  opacity: 0.85;
+}
+
+/* ============================= */
+/* CITATIONS */
+/* ============================= */
+
+.citationWrapper {
+  margin-top: 20px;
+}
+
+.citationToggle {
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  color: inherit;
+}
+
+.citationList {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.citationLink {
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+  color: inherit;
+}
+
+.citationLink:hover {
+  opacity: 0.7;
+}
+
+.verifiedLabel {
+  color: #22c55e;
+}
+
+.unverifiedLabel {
+  color: #f59e0b;
+}
+
+/* ============================= */
+/* WARNING */
+/* ============================= */
+
+.warning {
+  margin-top: 14px;
+  color: #f59e0b;
+  font-weight: 500;
+}
+
+/* ============================= */
+/* ANIMATIONS */
+/* ============================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

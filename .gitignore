@@ -1,0 +1,29 @@
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# --- Runtime data (large / private / regenerated) ---
+data/chroma/
+data/pdfs/
+data/excels/
+data/zips/
+data/downloads/
+data/logs/
+data/*.db
+data/*.pkl
+
+# --- Frontend ---
+node_modules/
+dist/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/

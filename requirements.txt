@@ -1,0 +1,55 @@
+# --- Core Backend ---
+fastapi
+uvicorn
+
+# --- Database ---
+sqlalchemy
+
+# --- Validation ---
+pydantic
+
+# --- Crawling & Parsing ---
+requests
+beautifulsoup4
+lxml
+
+# --- PDF Handling ---
+pdfplumber
+pillow
+opencv-python
+pdf2image
+numpy
+
+# --- OCR ---
+pytesseract
+
+# --- Language Detection ---
+langdetect
+
+# --- Knowledge graph ---
+networkx
+
+# --- Vector Database ---
+chromadb
+
+# --- Authentication & Security ---
+PyJWT>=2.8
+bcrypt>=4.0.1
+python-dotenv
+
+# --- LLM Providers ---
+openai
+google-genai
+webdriver-manager
+ocrmypdf
+python-multipart
+sentence-transformers
+torch
+nltk
+rank-bm25
+pandas
+openpyxl
+xlrd
+spacy
+neo4j
+playwright
